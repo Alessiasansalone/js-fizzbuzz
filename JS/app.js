@@ -16,10 +16,14 @@ for (i = 0; i < 100; i++) {
     // creiamo una variabile che indichi a JS di partire dall'1
     let num = i + 1 // number
 
+    // creiamo variabili resto
+    const resto3 = num % 3
+    const resto5 = num % 5
+
     // STAMPA IN CONSOLE 
 
     // se i % 15 => 'FizzBuzz'
-    if (num % 15 == 0) {
+    if (resto3 === 0 && resto5 === 0) {
         console.log('FizzBuzz') // string
     }
     // altrimenti se i % 5 => 'Buzz'
@@ -38,7 +42,7 @@ for (i = 0; i < 100; i++) {
     // STAMPA IN HTML 
 
     // se i % 3 => 'Fizz'
-    if (num % 15 == 0) {
+    if (resto3 === 0 && resto5 === 0) {
         ulElement.innerHTML = ulElement.innerHTML + '<li> FizzBuzz (multiplo di 15) </li>'
     }
     // se i % 5 => 'Buzz'
