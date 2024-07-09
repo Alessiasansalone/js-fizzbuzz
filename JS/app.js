@@ -37,18 +37,17 @@ for (i = 0; i < 100; i++) {
 
     // se i % 3 => 'Fizz'
     if (num % 15 == 0) {
-        ulElement.innerHTML = ulElement.innerHTML + '<li> FizzBuzz </li>'
+        ulElement.innerHTML = ulElement.innerHTML + '<li> FizzBuzz (multiplo di 15) </li>'
     }
     // se i % 5 => 'Buzz'
     else if (num % 5 == 0) {
-        ulElement.innerHTML = ulElement.innerHTML + '<li> Buzz </li>'
+        ulElement.innerHTML = ulElement.innerHTML + '<li> Buzz (multiplo di 5) </li>'
     }
     // se i % 15 => 'FizzBuzz'
     else if (num % 3 == 0) {
-        ulElement.innerHTML = ulElement.innerHTML + '<li> Fizz </li>'
+        ulElement.innerHTML = ulElement.innerHTML + '<li> Fizz (multiplo di 3) </li>'
     }
     else {
         ulElement.innerHTML = ulElement.innerHTML + '<li>' + num + '</li>'
-
     }
 }
