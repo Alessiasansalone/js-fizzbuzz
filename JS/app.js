@@ -8,15 +8,17 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”. */
 // prendiamo ul dal DOM
 const ulElement = document.getElementById('lista')
 
+document.getElementById('lista').style.color = 'blue'
+
 //creiamo un ciclo che conti i numeri d 1 a 100
 for (i = 0; i < 100; i++) {
 
     // creiamo una variabile che indichi a JS di partire dall'1
     let num = i + 1 // number
 
-    // STAMPA IN CONSOLE
+    // STAMPA IN CONSOLE 
 
-    // se i % 3 => 'Fizz'
+    // se i % 15 => 'FizzBuzz'
     if (num % 15 == 0) {
         console.log('FizzBuzz') // string
     }
@@ -24,7 +26,7 @@ for (i = 0; i < 100; i++) {
     else if (num % 5 == 0) {
         console.log('Buzz') // string
     }
-    // altrimenti se i % 15 => 'FizzBuzz'
+    // altrimenti se i % 3 => 'Fizz'
     else if (num % 3 == 0) {
         console.log('Fizz') // string
     }
